@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -10,6 +12,12 @@ body {
     width: 100%;
     height: auto;
     background-color: #000039;
+}
+
+.header-div {
+    margin-left: 23%;
+    margin-right: 23%;
+    width: 54%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,12 +26,13 @@ body {
 .header-logo {
     width: auto;
     height: auto;
-    margin-left: 23%;
 }
 
 
 .header-buttons-container {
-    margin-left: 10.46%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .header-button {
@@ -44,7 +53,7 @@ body {
 
 .header-contacts {
     width: auto;
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .header-contacts h2{
@@ -158,7 +167,8 @@ body {
     background-color: rgba(255, 223, 223, 0.5);
     position: relative;
     z-index: 2;
-    margin-left: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .info-content {
@@ -439,22 +449,29 @@ body {
     width: 100%;
     height: auto;
     background-color: #000039;
+    background-image: url('img/illustration.png');
+    background-position: bottom center; 
+}
+
+.footer-div {
+    margin-left: 23%;
+    margin-right: 23%;
+    width: 54%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('img/illustration.png');
-    background-position: bottom center; 
 }
 
 .footer-logo {
     width: auto;
     height: auto;
-    margin-left: 23%;
 }
 
 
 .footer-buttons-container {
-    margin-left: 10.46%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-button {
@@ -475,7 +492,7 @@ body {
 
 .footer-contacts {
     width: auto;
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .footer-contacts h2{
@@ -499,7 +516,7 @@ body {
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
     .header-logo {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -507,6 +524,15 @@ body {
     }
 
     .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-div {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -803,6 +829,15 @@ body {
     }
 
     .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-div {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
