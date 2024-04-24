@@ -415,7 +415,7 @@ body {
     background-color: #072658;
     background-image: url('img/illustration.svg');
     background-size: cover;
-    background-position: bottom;
+    background-position: start;
     display: flex;
     align-items: end;
 }
