@@ -13,9 +13,6 @@
         <div class="header-div">
             <img class="header-logo" src="img/logo.svg" alt="logo">
             <div class="header-buttons-container">
-                <button class="header-button">Экскурсии по Уфе</button>
-                <button class="header-button">Экскурсии по Башкирии</button>
-                <button class="header-button">Контакты</button>
             </div>
             <div class="header-contacts">
                 <h2>оставить заявку</h2>
@@ -23,73 +20,86 @@
             </div>
         </div>
     </div>
-    <div class="main">
-        <div class="info-block">
-            <div class="info-block-div">
+    <div class="main-menu">
+        <div class="menu">
+            <div class="menu-info">
                 <h3>
-                    <span class="cyan-text">ВРЕМЕННАЯ СТРАНИЦА</span><br>
-                    выбора экскурсий
+                    <span class="cyan-text">Дорогой друг!</span><br>
+                    предлагаем тебе посетить наши экскурсии<br> по республике башкортостан и городу Уфа
                 </h3>
-            </div>
-            <div class="trial-info">
-                <div class="trial-info-div">
-                    <div class="trial-text" style="margin-top: 0%;">
-                        <h3 style="margin-bottom: 0px">ЭКСКУРСИИ:</h3>
-                        <div class="trial-text-div" onclick="window.location.href = 'socrat.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Сократ»</span><br></h2>
+                <img class="menu-arrows" src="img/arrows.svg">
+                <div class="menu-parts-container">
+                    <div class="menu-part" style="margin-top: 4.5%;">
+                        <img src="img/menupic1.svg">
+                        <h3>республика башкортостан</h3>
+                        <div class="menu-part-inner-div">
+                            <!--<h3>Башкирия</h3>-->
+                            <img src="img/башкирия.svg">
+                            <div class="menu-part-button" onclick="window.location.href = 'lomonosov.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">«Михаил Ломоносов» Взгляни
+                                        на мир по-новому</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'yagantau.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Научно-популярная экскурсия по Геопарку Янган-Тау</span>
+                                </h2>
+                            </div>
                         </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'physmat.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Уфа сквозь призму
-                                    математики и физики»</span><br></h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'estnauch.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Уфа естественно-научная»</span><br>
-                            </h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'nauchobr.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Уфа
-                                    Научно-образовательная»</span><br></h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;"
-                            onclick="window.location.href = 'avicenna.html'">
-                        <div class="trial-text-div">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Уфа Биолого-медицинская»</span><br>
-                            </h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'shen-co.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«шень ко»</span><br></h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'yagantau.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Янган-Тау»</span><br></h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'lomobosov.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Михаил Ломоносов»</span><br></h2>
-                        </div>
-                        <img src="img/vert-line.png" style="margin-left: 30px;">
-                        <div class="trial-text-div" onclick="window.location.href = 'mendeleev.html'">
-                            <img src="img/noc.png">
-                            <h2><span class="cyan-text" style="font-weight: 600;">«Дмитрий Менделеев»</span><br></h2>
+                    </div>
+                    <div class="menu-part">
+                        <img src="img/menupic2.svg">
+                        <h3>город уфа</h3>
+                        <div class="menu-part-inner-div">
+                            <!--<h3>Уфа</h3>-->
+                            <img src="img/уфа.svg">
+                            <div class="menu-part-button" onclick="window.location.href = 'socrat.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">«Сократ» научно-популярный маршрут гуманитарной
+                                        направленности</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'physmat.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Уфа физико-математическая: «Уфа сквозь призму математики и
+                                        физики»</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'estnauch.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Уфа естественно-научная: от зарождения жизни на Земле к
+                                        ноосфере В.И. Вернадского»</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'nauchobr.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Научно-образовательный маршрут «Пифагор»</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'avicenna.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Биолого-медицинская экскурсия «Авиценна»</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'shen-co.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">Шень Ко: мир научно-технических разработок</span></h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="menu-part-button" onclick="window.location.href = 'mendeleev.html'">
+                                <img src="img/lilarrow.svg" alt="">
+                                <h2><span class="white-text">«Дмитрий Менделеев»Уфа – химическая столица России: от
+                                        атомов к материалам будущего»</span></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
+    </div>
+    <div class="footer" style="margin-top: -10%;">
         <div class="footer-div">
             <div class="footer-div-content">
                 <img class="footer-logo" src="img/logo.svg" alt="logo">
@@ -109,6 +119,24 @@
             </div>
         </div>
     </div>
+    <script>
+        var buttons = document.querySelectorAll('.menu-part-button');
+
+        // Перебираем все найденные элементы
+        buttons.forEach(function (button) {
+            var image = button.querySelector('img');
+
+            // Добавляем обработчик события для наведения мыши
+            button.addEventListener('mouseenter', function () {
+                image.src = 'img/lilarrow2.svg';
+            });
+
+            // Добавляем обработчик события для ухода мыши
+            button.addEventListener('mouseleave', function () {
+                image.src = 'img/lilarrow.svg';
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -13,11 +13,13 @@ body {
 	height: auto;
 	background-color: #000039;
 }
+
 .main {
 	background: url(img/main_back.jpg);
 	background-size: cover;
 	width: 100%;
 }
+
 .header-div {
 	margin-left: auto;
 	margin-right: auto;
@@ -83,55 +85,59 @@ body {
 }
 
 .info-block-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	position: relative;
 }
 
 .info-block-div-pt1 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 45%;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 45%;
+	height: 100%;
 	position: absolute;
 	z-index: 6;
 }
 
 .info-block-div-pt2 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 100%;
 	margin-left: auto;
-    height: 100%;
-    position: relative;
+	height: 100%;
+	position: relative;
 	z-index: 4;
 }
 
 .info-block-div-pt2-rb {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 75%;
 	margin-left: auto;
-    height: 100%;
-    position: relative;
+	height: 100%;
+	/*поставить 75% если нужно влезть в контейнер*/
+	position: relative;
 	z-index: 4;
 }
 
 .info-block-div-pt2 object {
-    width: 100%;
-    height: 1100px;
+	width: 100%;
+	height: 1100px;
+	margin-left: 25%;
+	/*убрать если нужно влезть в контейнер*/
+	margin-top: -0.5%;
 }
 
 .info-block-div-pt2-rb object {
-    width: 90%;
-    height: 1100px;
+	width: 90%;
+	height: 1100px;
 	margin-left: 30%;
 	margin-top: 5%;
 }
@@ -160,7 +166,7 @@ body {
 	background-image: url("img/main_bottom.png");
 	background-size: cover;
 	z-index: 5;
-    height: 100%;
+	height: 100%;
 }
 
 .info-block h3 {
@@ -241,13 +247,11 @@ body {
 	width: auto;
 	border-radius: 10px;
 	z-index: 1;
-	background: linear-gradient(
-		184.55deg,
-		rgba(0, 23, 229, 32.2201) -11.93%,
-		rgba(29, 126, 139, -0.806329) 0.54%,
-		rgba(54, 231, 255, 0.2769) 56.79%,
-		rgba(0, 0, 0, 0) 93.95%
-	);
+	background: linear-gradient(184.55deg,
+			rgba(0, 23, 229, 32.2201) -11.93%,
+			rgba(29, 126, 139, -0.806329) 0.54%,
+			rgba(54, 231, 255, 0.2769) 56.79%,
+			rgba(0, 0, 0, 0) 93.95%);
 	backdrop-filter: blur(5px);
 }
 
@@ -311,11 +315,9 @@ body {
 	font-size: 16px;
 	color: rgb(255, 255, 255);
 	text-align: center;
-	background: linear-gradient(
-		330deg,
-		rgb(9, 30, 90) -2%,
-		rgb(255, 255, 255) 151%
-	);
+	background: linear-gradient(330deg,
+			rgb(9, 30, 90) -2%,
+			rgb(255, 255, 255) 151%);
 	margin-top: 30px;
 	border: none;
 }
@@ -333,11 +335,9 @@ body {
 	font-size: 16px;
 	color: rgb(255, 255, 255);
 	text-align: center;
-	background: linear-gradient(
-		330deg,
-		rgb(9, 30, 90) -2%,
-		rgb(255, 255, 255) 151%
-	);
+	background: linear-gradient(330deg,
+			rgb(9, 30, 90) -2%,
+			rgb(255, 255, 255) 151%);
 	margin-top: 30px;
 	border: none;
 }
@@ -399,6 +399,7 @@ body {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
+
 .trial-text-div1 {
 	width: 100%;
 	display: flex;
@@ -407,9 +408,11 @@ body {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
+
 .trial-text-div1 h2 {
 	margin: 20px 0;
 }
+
 .trial-text-inner-div h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
@@ -425,7 +428,7 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-    z-index: 10;
+	z-index: 10;
 }
 
 .slider-content h3 {
@@ -515,7 +518,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: rgba(0, 0, 57, 0.5); /* Изменено */
+	background-color: rgba(0, 0, 57, 0.5);
+	/* Изменено */
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -583,7 +587,137 @@ body {
 
 .vert-line {
 	margin-left: 30px;
-    z-index: 10;
+	z-index: 10;
+}
+
+.main-menu {
+	background: url(img/main_back.jpg);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu h3 {
+	width: auto;
+	height: auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 38px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.menu-info {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+}
+
+.menu-arrows {
+	width: auto;
+	height: auto;
+}
+
+.menu-parts-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+}
+
+.menu-part {
+	display: flex;
+	flex-direction: column;
+	width: 44%;
+	height: auto;
+	align-items: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.menu-part img {
+	width: 80%;
+	height: auto;
+}
+
+.menu-part h3 {
+	width: auto;
+	height: auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 3%;
+}
+
+.menu-part-inner-div {
+	position: relative;
+	width: auto;
+	border-radius: 10px;
+	z-index: 1;
+	background: linear-gradient(184.55deg,
+			rgba(0, 23, 229, 32.2201) -11.93%,
+			rgba(29, 126, 139, -0.806329) 0.54%,
+			rgba(54, 231, 255, 0.2769) 56.79%,
+			rgba(0, 0, 0, 0) 93.95%);
+	backdrop-filter: blur(5px);
+}
+
+.menu-part-inner-div h3 {
+	width: auto;
+	height: auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 64px;
+	color: transparent;
+	-webkit-text-stroke: 0.5px white;
+	/* для Safari/Chrome */
+	text-transform: uppercase;
+	margin-top: 3%;
+	margin-bottom: auto;
+}
+
+.menu-part-inner-div img {
+	width: auto;
+	height: auto;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-part-button {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 2;
+	text-align: left;
+}
+
+.menu-part-button:hover .white-text {
+	color: #36e7ff;
+	/* Изменение цвета текста на #36e7ff при наведении на элемент */
+}
+
+.menu-part-button img {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -653,7 +787,7 @@ body {
 		width: 100%;
 		height: auto;
 	}
-	
+
 	.info-block-div {
 		margin-left: 2%;
 		margin-right: 2%;
@@ -663,7 +797,7 @@ body {
 		align-items: center;
 		position: relative;
 	}
-	
+
 	.info-block-div-pt1 {
 		display: flex;
 		flex-direction: column;
@@ -673,7 +807,7 @@ body {
 		position: relative;
 		z-index: 6;
 	}
-	
+
 	.info-block-div-pt2 {
 		margin-top: 15%;
 		margin-left: 2%;
@@ -689,11 +823,30 @@ body {
 		border-image: linear-gradient(to bottom right, #92affa, #6d5cd1) 1;
 	}
 
+	.info-block-div-pt2-rb {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: 100%;
+		margin-left: 0;
+		height: 100%;
+		position: relative;
+		z-index: 6;
+		overflow-y: scroll;
+	}
+
 	.info-block-div-pt2 object {
 		width: 100%;
 		height: 500px;
 	}
-	
+
+	.info-block-div-pt2-rb object {
+		width: 200%;
+		height: 900px;
+		margin-left: 0%;
+		margin-top: 5%;
+	}
+
 
 	.info-buttons {
 		position: relative;
@@ -810,7 +963,8 @@ body {
 
 	.trial-info {
 		background-image: url("img/mountains_1.png");
-		background-size: cover; /* Растягиваем изображение на всю ширину блока */
+		background-size: cover;
+		/* Растягиваем изображение на всю ширину блока */
 		width: 100%;
 		height: auto;
 		position: relative;
@@ -971,10 +1125,13 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: rgba(0, 0, 57, 0.5); /* Изменено */
+		background-color: rgba(0, 0, 57, 0.5);
+		/* Изменено */
 		width: 100%;
-		position: relative; /* Добавлено */
-		z-index: 1; /* Добавлено */
+		position: relative;
+		/* Добавлено */
+		z-index: 1;
+		/* Добавлено */
 	}
 
 	.footer-div-content {
@@ -1021,5 +1178,135 @@ body {
 
 	.vert-line {
 		margin-left: 3%;
+	}
+
+	.main-menu {
+		background: url(img/main_back.jpg);
+		background-size: cover;
+		width: 100%;
+		height: auto;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu h3 {
+		width: auto;
+		height: auto;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	.menu-info {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	.menu-arrows {
+		width: 0;
+		height: 0;
+	}
+
+	.menu-parts-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.menu-part {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu-part img {
+		width: 80%;
+		height: auto;
+	}
+
+	.menu-part h3 {
+		width: auto;
+		height: auto;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		color: white;
+		text-transform: uppercase;
+		margin-top: 3%;
+	}
+
+	.menu-part-inner-div {
+		position: relative;
+		width: auto;
+		border-radius: 10px;
+		z-index: 1;
+		background: linear-gradient(184.55deg,
+				rgba(0, 23, 229, 32.2201) -11.93%,
+				rgba(29, 126, 139, -0.806329) 0.54%,
+				rgba(54, 231, 255, 0.2769) 56.79%,
+				rgba(0, 0, 0, 0) 93.95%);
+		backdrop-filter: blur(5px);
+	}
+
+	.menu-part-inner-div h3 {
+		width: auto;
+		height: auto;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		font-size: 64px;
+		color: transparent;
+		-webkit-text-stroke: 0.5px white;
+		/* для Safari/Chrome */
+		text-transform: uppercase;
+		margin-top: 3%;
+		margin-bottom: auto;
+	}
+
+	.menu-part-inner-div img {
+		width: 90%;
+		height: 50px;
+		margin-top: 4%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu-part-button {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		width: 100%;
+		height: auto;
+		position: relative;
+		z-index: 2;
+		text-align: left;
+	}
+
+	.menu-part-button:hover .white-text {
+		color: #36e7ff;
+		/* Изменение цвета текста на #36e7ff при наведении на элемент */
+	}
+
+	.menu-part-button img {
+		width: 20px;
+		height: 20px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 }
