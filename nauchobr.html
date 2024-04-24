@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
     <div class="header">
         <div class="header-div">
@@ -24,45 +25,48 @@
         </div>
     </div>
     <div class="info-block">
-        <h3>
-            <span class="cyan-text">Уфа</span><br>
-            Научно-образовательный<br>маршрут
-            <span class="cyan-text">«Пифагор»</span><br>
-        </h3>
-        <h1>Уникальная возможность всего за один день познакомиться с современным состоянием и развитием IT-индустрии в
-            г. Уфа и республике Башкортостан!
-        </h1>
-        <div class="info-content">
-            <div class="info">
-                <img src="img/Time Circle.png" alt="">
-                <h2>Продолжительность: <span class="white-text">4 часа 35 минут</span></h2>
+        <div class="info-block-div">
+            <h3>
+                <span class="cyan-text">Уфа</span><br>
+                Научно-образовательный<br>маршрут
+                <span class="cyan-text">«Пифагор»</span><br>
+            </h3>
+            <h1>Уникальная возможность всего за один день познакомиться с современным состоянием и развитием
+                IT-индустрии в
+                г. Уфа и республике Башкортостан!
+            </h1>
+            <div class="info-content">
+                <div class="info">
+                    <img src="img/Time Circle.png" alt="">
+                    <h2>Продолжительность: <span class="white-text">4 часа 35 минут</span></h2>
+                </div>
+                <div class="line"></div>
+                <div class="info">
+                    <img src="img/Location.png" alt="">
+                    <h2>Протяженность: <span class="white-text">14,3 км</span></h2>
+                </div>
+                <div class="line"></div>
+                <div class="info">
+                    <img src="img/Profile.png" alt="">
+                    <h2>Автор-разработчик: <span class="white-text">Христодуло О.И.,
+                            доцент, Зверева Н.Н.</span></h2>
+                </div>
+                <div class="line"></div>
+                <div class="info">
+                    <img src="img/3 User.png" alt="">
+                    <h2>Количество участников: <span class="white-text">группа 10-12 человек</span></h2>
+                </div>
+                <div class="line"></div>
+                <div class="info">
+                    <img src="img/chat.png" alt="">
+                    <h2>Категория экскурсантов: <span class="white-text">широкая аудитория от 12 лет</span></h2>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="info">
-                <img src="img/Location.png" alt="">
-                <h2>Протяженность: <span class="white-text">14,3 км</span></h2>
+            <div class="info-buttons">
+                <button class="info-button1">Построить маршрут в Яндекс Карте</button>
+                <button class="info-button2">Технологическая карта экскурсии</button>
+                <button class="info-button3">Оставить заявку</button>
             </div>
-            <div class="line"></div>
-            <div class="info">
-                <img src="img/Profile.png" alt="">
-                <h2>Автор-разработчик: <span class="white-text">Христодуло О.И.,
-                        доцент, Зверева Н.Н.</span></h2>
-            </div>
-            <div class="line"></div>
-            <div class="info">
-                <img src="img/3 User.png" alt="">
-                <h2>Количество участников: <span class="white-text">группа 10-12 человек</span></h2>
-            </div>
-            <div class="line"></div>
-            <div class="info">
-                <img src="img/chat.png" alt="">
-                <h2>Категория экскурсантов: <span class="white-text">широкая аудитория от 12 лет</span></h2>
-            </div>
-        </div>
-        <div class="info-buttons">
-            <button class="info-button1">Построить маршрут в Яндекс Карте</button>
-            <button class="info-button2">Технологическая карта экскурсии</button>
-            <button class="info-button3">Оставить заявку</button>
         </div>
     </div>
     <div class="trial-info">
@@ -197,13 +201,25 @@
             // Устанавливаем атрибуты src и alt из массива данных
             newImg.src = imagesData[currentIndex].src;
             newImg.alt = imagesData[currentIndex].alt;
+
             // Очищаем контейнер слайдера
             imageSlider.innerHTML = '';
             // Добавляем новый элемент img в контейнер слайдера
             imageSlider.appendChild(newImg);
 
+            // Устанавливаем класс active для нового изображения, чтобы оно плавно появилось
+            newImg.classList.add('active');
+
             // Увеличиваем индекс текущего изображения, обеспечивая циклическую смену
             currentIndex = (currentIndex + 1) % imagesData.length;
+
+            // Получаем предыдущее изображение и удаляем у него класс active, чтобы оно плавно исчезло
+            const prevImg = document.querySelector('.image-slider img:not(.active)');
+            if (prevImg) {
+                prevImg.classList.remove('active');
+            }
+
+            // Устанавливаем текст подписи для слайдера
             document.querySelector('.slider-content h3').textContent = newImg.alt;
         }
 
