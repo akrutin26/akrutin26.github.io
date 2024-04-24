@@ -448,6 +448,7 @@ body {
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .footer-button {
@@ -860,6 +861,7 @@ body {
         margin-left: 0%;
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .footer-button {
