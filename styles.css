@@ -858,7 +858,8 @@ body {
     
 
     .footer-buttons-container { 
-        margin-left: 0%;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
