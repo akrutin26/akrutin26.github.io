@@ -1,0 +1,67 @@
+body {
+    background: transparent;
+    overflow: hidden;
+}
+
+.svg-map .route {
+    display: none;
+}
+.svg-map .route.show {
+    display: inline;
+}
+
+
+.svg-map .marker > * {
+    transition: 
+        transform .3s ease-in-out, 
+        fill .3s ease-in-out, 
+        opacity .3s ease-in-out,
+        outline-color .3s ease-in-out;
+    transform-origin: 20px 50px;
+}
+.svg-map .marker [class^='st-'] {
+    transition: stop-color .3s ease-in-out;
+}
+.svg-map .marker .marker-image {
+    border-radius: 50%;
+    outline: 1px solid transparent;
+    opacity: 0;
+}
+
+.svg-map .path {
+    transition: stroke-width .3s ease-in-out;
+}
+
+
+.svg-map .route.active .marker > * {
+    transform: scale(2.5);
+}
+.svg-map .route.active .marker [class^='st-'] {
+    stop-color: #44B2C1 !important;
+}
+.svg-map .route.active .marker .marker-circle-small {
+    fill: #44B2C1 !important;
+}
+.svg-map .route.active .marker .marker-image {
+    outline-color: #ffffff;
+    opacity: 1;
+}
+
+
+.svg-map .marker.active > * {
+    transform: scale(2.5);
+}
+.svg-map .marker.active [class^='st-'] {
+    stop-color: #44B2C1 !important;
+}
+.svg-map .marker.active .marker-circle-small {
+    fill: #44B2C1 !important;
+}
+.svg-map .marker.active .marker-image {
+    outline-color: #ffffff;
+    opacity: 1;
+}
+
+.svg-map .path.active {
+    stroke-width: 5em !important;
+}
