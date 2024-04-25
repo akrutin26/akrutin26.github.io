@@ -13,9 +13,8 @@
         <div class="header-div">
             <img class="header-logo" src="img/logo.svg" alt="logo">
             <div class="header-buttons-container">
-                <button class="header-button">Экскурсии по Уфе</button>
-                <button class="header-button">Экскурсии по Башкирии</button>
-                <button class="header-button">Контакты</button>
+                <button class="header-button" onclick="window.location.href = 'index.html'">Все экскурсии</button>
+                <button class="header-button" onclick="window.location.href = 'https://nocrb.ru/noc#contacts'">Контакты</button>
             </div>
             <div class="header-contacts">
                 <h2>оставить заявку</h2>
@@ -28,7 +27,7 @@
             <div class="info-block-div">
                 <div class="info-block-div-pt1">
                     <h3><span class="cyan-text">Уфа</span>
-                        естественно-научная: <br>
+                       <br>естественно-научная: <br>
                         от зарождения жизни <br> на Земле к ноосфере <br> В.И. Вернадского»
                     </h3>
                     <div class="info-content">
@@ -74,12 +73,11 @@
             <div class="trial-info-div">
                 <div class="trial-text">
                     <h3 style="margin-bottom: 0px">МАРШРУТ ЭКСКУРСИИ:</h3>
-                    <div class="trial-text-div">
-                        <img src="img/bus.svg">
+                    <div class="trial-text-div1">
                         <h2>Перемещение экскурсантов предполагается на экскурсионном автобусе</h2>
                     </div>
                     <div class="trial-text-div">
-                        <img src="img/noc.svg">
+                        <img src="img/uunit2.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Гуманитарный корпус УУНиТ</span><br>ул. К.
                             Маркса
                             3/1</h2>
@@ -109,7 +107,7 @@
         <div class="trial-info-2">
             <div class="trial-text-div-2">
                 <img class="vert-line" src="img/vert-line2.png">
-                <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: column; padding-top: 30px;">
                     <h3>СОДЕРЖАНИЕ ЭКСКУРСИИ</h3>
                     <h2>Научно-популярный маршрут «Уфа естественно-научная: от зарождения жизни на Земле к ноосфере
                         В.И.Вернадского» предлагает уникальную возможность познакомиться с разнообразием научных
@@ -148,30 +146,34 @@
                         работах выдающегося В.И. Вернадского, расширят знания и вдохновятся на дальнейшее погружение в
                         научные исследования в области естественных наук.
                     </h2>
-                    <button class="info-button4" style="margin-left: 30px;">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+                    <button class="info-button4" style="margin-left: 30px;" onclick="window.location.href = 'pdfs/Вернадского.pdf'">Читать полностью</button>
                 </div>
             </div>
         </div>
     </div>
-    <button id="back-to-top-btn" title="Вернуться наверх">&#8679;</button>
-    <button id="back-to-home-btn" title="Вернуться на главную" onclick="window.location.href = 'index.html'">🏠</button>
+    <button id="back-to-top-btn" title="Вернуться наверх"><img src="img/lilarrowup.svg"></button>
+    <button id="back-to-home-btn" title="Вернуться на главную" onclick="window.location.href = 'index.html'">
+        Все маршруты
+        <img src="img/lilarrow.svg" style="margin-left: 2%;">
+    </button>
     <div class="footer">
         <div class="footer-div">
             <div class="footer-div-content">
                 <img class="footer-logo" src="img/logo.svg" alt="logo">
                 <div class="footer-buttons-container">
-                    <button class="footer-button">Экскурсии по Уфе</button>
-                    <button class="footer-button">Экскурсии по Башкирии</button>
-                    <button class="footer-button">Контакты</button>
+                    <button class="footer-button" onclick="window.location.href = 'index.html'">Все экскурсии</button>
+                    <button class="footer-button" onclick="window.location.href = 'https://nocrb.ru/noc#contacts'">Контакты</button>
                 </div>
-                <div class="footer-contacts">
-                    <h2>написать нам</h2>
-                    <h3>uk@nocrb.ru</h3>
-                </div>
-                <div class="footer-contacts">
+                <div class="contacts_block">
+                    <div class="footer-contacts">
                     <h2>оставить заявку</h2>
                     <h3>+7 (347) 214-92-16</h3>
                 </div>
+                <div class="footer-contacts">
+                    <h2>разработал</h2>
+                   <h3><img src="img/roscomtech_logo.svg" alt=""></h3>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -231,8 +233,10 @@
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btn1.style.display = "block";
-                btn2.style.display = "block";
+                btn1.style.display = "flex";
+                btn2.style.flexDirection = "column";
+                btn2.style.display = "flex";
+                btn2.style.flexDirection = "row";
             } else {
                 btn1.style.display = "none";
                 btn2.style.display = "none";
