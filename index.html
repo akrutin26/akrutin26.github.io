@@ -99,6 +99,7 @@
         </div>
     </div>
     </div>
+    <button id="back-to-top-btn" title="Вернуться наверх">&#8679;</button>
     <div class="footer" style="margin-top: -10%;">
         <div class="footer-div">
             <div class="footer-div-content">
@@ -136,6 +137,32 @@
                 image.src = 'img/lilarrow.svg';
             });
         });
+    </script>
+    <script>
+        // Получаем кнопку возврата наверх
+        var btn1 = document.getElementById("back-to-top-btn");
+        var btn2 = document.getElementById("back-to-home-btn");
+
+        // Когда пользователь прокручивает вниз 20px от верха документа, показываем кнопку
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn1.style.display = "block";
+                btn2.style.display = "block";
+            } else {
+                btn1.style.display = "none";
+                btn2.style.display = "none";
+            }
+        }
+
+        // При клике на кнопку прокручиваем наверх страницы
+        btn1.onclick = function () {
+            document.body.scrollTop = 0; // Для Safari
+            document.documentElement.scrollTop = 0; // Для других браузеров
+        };
     </script>
 </body>
 

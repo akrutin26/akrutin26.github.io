@@ -34,17 +34,17 @@
                     </h3>
                     <div class="info-content">
                         <div class="info">
-                            <img src="img/Time Circle.png" alt="">
+                            <img src="img/Time Circle.svg" alt="">
                             <h2>Продолжительность: <span class="white-text">4 часа</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/Location.png" alt="">
+                            <img src="img/Location.svg" alt="">
                             <h2>Протяженность: <span class="white-text">8,5 км</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/Profile.png" alt="">
+                            <img src="img/Profile.svg" alt="">
                             <h2>Автор-разработчик: <span class="white-text">Фролова И.B.,
                                     Демичева A.C., Гилязова Г. И. - ИИГУ УУниТ;
                                     Садыков P.P. - ИЭИ им. Кузеева УФИЦ PAH;
@@ -54,12 +54,12 @@
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/3 User.png" alt="">
+                            <img src="img/3 User.svg" alt="">
                             <h2>Количество участников: <span class="white-text">группа до 10 человек</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/chat.png" alt="">
+                            <img src="img/Chat.svg" alt="">
                             <h2>Категория экскурсантов: <span class="white-text">от 14 до 18 лет</span></h2>
                         </div>
                     </div>
@@ -79,44 +79,45 @@
                 <div class="trial-text">
                     <h3 style="margin-bottom: 0px">МАРШРУТ ЭКСКУРСИИ:</h3>
                     <div class="trial-text-div1">
+                        <img src="img/bus.svg">
                         <h2>Перемещение экскурсантов предполагается на экскурсионном автобусе</h2>
                     </div>
                     <div class="trial-text-div">
-                        <img src="img/noc.png">
+                        <img src="img/noc.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Кампус Евразийского НОЦ</span><br> ул.
                             Заки
                             Валиди, 32/2</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/uunit.png">
+                        <img src="img/uunit.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Главный корпус УУНиТ</span><br> ул. Заки
                             Валиди,
                             32</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/uunit2.png">
+                        <img src="img/uunit2.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Гуманитарный корпус УУНиТ</span><br>ул.
                             Карла
                             Маркса, 3\1</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/iei.png">
+                        <img src="img/iei.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">ИЭИ им.Кузеева УФИЦ РАН</span><br>ул.
                             Карла
                             Маркса, 6</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/bgpu.png">
+                        <img src="img/bgpu.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">БГПУ им. Акмуллы</span><br>ул. Октябрьской
                             революции, 3а/3, №401</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/ies.png">
+                        <img src="img/ies.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">ИЭС УГНТУ</span><br>ул. Чернышевского, 145
                         </h2>
                     </div>
@@ -152,6 +153,8 @@
             </div>
         </div>
     </div>
+    <button id="back-to-top-btn" title="Вернуться наверх">&#8679;</button>
+    <button id="back-to-home-btn" title="Вернуться на главную" onclick="window.location.href = 'index.html'">🏠</button>
     <div class="footer">
         <div class="footer-div">
             <div class="footer-div-content">
@@ -217,6 +220,32 @@
 
         // Вызываем функцию смены изображений через определенный интервал времени
         setInterval(changeImage, 3000); // Интервал смены изображений (в миллисекундах)
+    </script>
+    <script>
+        // Получаем кнопку возврата наверх
+        var btn1 = document.getElementById("back-to-top-btn");
+        var btn2 = document.getElementById("back-to-home-btn");
+
+        // Когда пользователь прокручивает вниз 20px от верха документа, показываем кнопку
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn1.style.display = "block";
+                btn2.style.display = "block";
+            } else {
+                btn1.style.display = "none";
+                btn2.style.display = "none";
+            }
+        }
+
+        // При клике на кнопку прокручиваем наверх страницы
+        btn1.onclick = function () {
+            document.body.scrollTop = 0; // Для Safari
+            document.documentElement.scrollTop = 0; // Для других браузеров
+        };
     </script>
 </body>
 

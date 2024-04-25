@@ -37,28 +37,28 @@
                     </h1>
                     <div class="info-content">
                         <div class="info">
-                            <img src="img/Time Circle.png" alt="">
+                            <img src="img/Time Circle.svg" alt="">
                             <h2>Продолжительность: <span class="white-text">3 часа 40 минут</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/Location.png" alt="">
+                            <img src="img/Location.svg" alt="">
                             <h2>Протяженность: <span class="white-text">8,7 км</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/Profile.png" alt="">
+                            <img src="img/Profile.svg" alt="">
                             <h2>Автор-разработчик: <span class="white-text">Бакиева Г.Р.,
                                     Хусаинов Ю.Г., Баннова А.В.</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/3 User.png" alt="">
+                            <img src="img/3 User.svg" alt="">
                             <h2>Количество участников: <span class="white-text">группа до 25 человек</span></h2>
                         </div>
                         <div class="line"></div>
                         <div class="info">
-                            <img src="img/chat.png" alt="">
+                            <img src="img/Chat.svg" alt="">
                             <h2>Категория экскурсантов: <span class="white-text">школьники 9-11 классов, студенты всех
                                     курсов,
                                     стейкхо́лдеры технических наук</span></h2>
@@ -80,32 +80,32 @@
                 <div class="trial-text">
                     <h3 style="margin-bottom: 0px">МАРШРУТ ЭКСКУРСИИ:</h3>
                     <div class="trial-text-div">
-                        <img src="img/bus.png">
+                        <img src="img/bus.svg">
                         <h2>Перемещение экскурсантов предполагается на экскурсионном автобусе</h2>
                     </div>
                     <div class="trial-text-div">
-                        <img src="img/noc.png">
+                        <img src="img/noc.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Кампус Евразийского НОЦ РБ</span><br>ул.
                             Заки
                             Валиди, д. 32/2</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/atom.png">
+                        <img src="img/atom.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Уфимский университет науки и
                                 технологий</span><br>
                             ул. К.Маркса д.12. к.2</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/leaf.png">
+                        <img src="img/leaf.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Башкирский государственный аграрный
                                 университет</span><br>
                             ул. 8 Марта, д.17</h2>
                     </div>
                     <img src="img/vert-line.png" style="margin-left: 30px;">
                     <div class="trial-text-div">
-                        <img src="img/usptu.png">
+                        <img src="img/usptu.svg">
                         <h2><span class="cyan-text" style="font-weight: 600;">Уфимский государственный нефтяной <br>
                                 технический
                                 университет</span><br>ул. Менделеева, 195</h2>
@@ -158,6 +158,8 @@
             </div>
         </div>
     </div>
+    <button id="back-to-top-btn" title="Вернуться наверх">&#8679;</button>
+    <button id="back-to-home-btn" title="Вернуться на главную" onclick="window.location.href = 'index.html'">🏠</button>
     <div class="footer">
         <div class="footer-div">
             <div class="footer-div-content">
@@ -229,6 +231,32 @@
 
         // Вызываем функцию смены изображений через определенный интервал времени
         setInterval(changeImage, 3000); // Интервал смены изображений (в миллисекундах)
+    </script>
+    <script>
+        // Получаем кнопку возврата наверх
+        var btn1 = document.getElementById("back-to-top-btn");
+        var btn2 = document.getElementById("back-to-home-btn");
+
+        // Когда пользователь прокручивает вниз 20px от верха документа, показываем кнопку
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn1.style.display = "block";
+                btn2.style.display = "block";
+            } else {
+                btn1.style.display = "none";
+                btn2.style.display = "none";
+            }
+        }
+
+        // При клике на кнопку прокручиваем наверх страницы
+        btn1.onclick = function () {
+            document.body.scrollTop = 0; // Для Safari
+            document.documentElement.scrollTop = 0; // Для других браузеров
+        };
     </script>
 </body>
 

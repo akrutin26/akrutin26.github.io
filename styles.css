@@ -720,6 +720,49 @@ body {
 	margin-right: 5px;
 }
 
+#back-to-top-btn {
+    display: none; /* Скрыть кнопку по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 20px; /* Расстояние от нижней границы */
+    right: 20px; /* Расстояние от правой границы */
+    z-index: 99; /* Позиционирование над другими элементами */
+    font-size: 24px;
+    background-color: #007bff; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убрать границу */
+    border-radius: 50%; /* Круглая форма */
+    cursor: pointer; /* Изменить курсор при наведении */
+    padding: 10px; /* Отступы */
+	width: 50px;
+	height: 50px;
+}
+
+#back-to-top-btn:hover {
+    background-color: #0056b3; /* Изменить цвет фона при наведении */
+}
+
+#back-to-home-btn {
+    display: none; /* Скрыть кнопку по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 20px; /* Расстояние от нижней границы */
+    right: 90px; /* Расстояние от правой границы */
+    z-index: 99; /* Позиционирование над другими элементами */
+    font-size: 24px;
+    background-color: #007bff; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убрать границу */
+    border-radius: 50%; /* Круглая форма */
+    cursor: pointer; /* Изменить курсор при наведении */
+    padding: 10px; /* Отступы */
+	width: 50px;
+	height: 50px;
+}
+
+#back-to-home-btn:hover {
+    background-color: #0056b3; /* Изменить цвет фона при наведении */
+}
+
+
 @media only screen and (max-width: 1200px) {
 	.header-logo {
 		margin-top: 2%;
