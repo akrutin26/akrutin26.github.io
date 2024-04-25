@@ -121,7 +121,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	width: 75%;
+	width: 85%;
 	margin-left: auto;
 	height: 100%;
 	/*поставить 75% если нужно влезть в контейнер*/
