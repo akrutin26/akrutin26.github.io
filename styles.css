@@ -571,7 +571,7 @@ body {
 
 .footer-contacts {
 	width: auto;
-	
+
 }
 
 .footer-contacts h2 {
@@ -590,10 +590,12 @@ body {
 	color: white;
 	text-align: right;
 }
+
 .contacts_block {
 	display: flex;
 	column-gap: 20px;
 }
+
 .vert-line {
 	margin-left: 30px;
 	z-index: 10;
@@ -728,19 +730,31 @@ body {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
 #back-to-top-btn {
-    display: none; /* Скрыть кнопку по умолчанию */
-    position: fixed; /* Фиксированное позиционирование */
-    bottom: 20px; /* Расстояние от нижней границы */
-    right: 20px; /* Расстояние от правой границы */
-    z-index: 99; /* Позиционирование над другими элементами */
-    font-size: 24px;
-    background-color: #007bff; /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none; /* Убрать границу */
-    border-radius: 50%; /* Круглая форма */
-    cursor: pointer; /* Изменить курсор при наведении */
-    padding: 10px; /* Отступы */
+	display: none;
+	/* Скрыть кнопку по умолчанию */
+	position: fixed;
+	/* Фиксированное позиционирование */
+	bottom: 20px;
+	/* Расстояние от нижней границы */
+	right: 20px;
+	/* Расстояние от правой границы */
+	z-index: 99;
+	/* Позиционирование над другими элементами */
+	font-size: 24px;
+	background-color: #007bff;
+	/* Цвет фона */
+	color: white;
+	/* Цвет текста */
+	border: none;
+	/* Убрать границу */
+	border-radius: 50%;
+	/* Круглая форма */
+	cursor: pointer;
+	/* Изменить курсор при наведении */
+	padding: 10px;
+	/* Отступы */
 	width: 50px;
 	height: 50px;
 	align-items: center;
@@ -748,22 +762,34 @@ body {
 }
 
 #back-to-top-btn:hover {
-    background-color: #0056b3; /* Изменить цвет фона при наведении */
+	background-color: #0056b3;
+	/* Изменить цвет фона при наведении */
 }
 
 #back-to-home-btn {
-    display: none; /* Скрыть кнопку по умолчанию */
-    position: fixed; /* Фиксированное позиционирование */
-    bottom: 20px; /* Расстояние от нижней границы */
-    right: 90px; /* Расстояние от правой границы */
-    z-index: 99; /* Позиционирование над другими элементами */
-    font-size: 16px;
-    background-color: #007bff; /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none; /* Убрать границу */
-    border-radius: 25px ;/* Круглая форма */
-    cursor: pointer; /* Изменить курсор при наведении */
-    padding: 10px; /* Отступы */
+	display: none;
+	/* Скрыть кнопку по умолчанию */
+	position: fixed;
+	/* Фиксированное позиционирование */
+	bottom: 20px;
+	/* Расстояние от нижней границы */
+	right: 90px;
+	/* Расстояние от правой границы */
+	z-index: 99;
+	/* Позиционирование над другими элементами */
+	font-size: 16px;
+	background-color: #007bff;
+	/* Цвет фона */
+	color: white;
+	/* Цвет текста */
+	border: none;
+	/* Убрать границу */
+	border-radius: 25px;
+	/* Круглая форма */
+	cursor: pointer;
+	/* Изменить курсор при наведении */
+	padding: 10px;
+	/* Отступы */
 	width: 170px;
 	height: 50px;
 	font-family: "Montserrat", sans-serif;
@@ -772,54 +798,60 @@ body {
 }
 
 #back-to-home-btn:hover {
-    background-color: #0056b3; /* Изменить цвет фона при наведении */
+	background-color: #0056b3;
+	/* Изменить цвет фона при наведении */
 }
 
 .marker {
-z-index: 9999;
+	z-index: 9999;
 
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {
-    background-color: white;
-    margin: 10% auto;
-	margin-top: 5%;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+	background-color: white;
+	margin: 10% auto;
+	margin-top: 3%;
+	margin-bottom: 4%;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	height: 85%;
+	max-height: 800px;
+	max-width: 30%;
 	border-radius: 15px;
+	overflow-y: scroll;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+	margin: 0 auto;
+	padding: 20px;
+	width: auto;
+	height: auto;
 }
 
 .popup h3 {
@@ -837,9 +869,9 @@ form {
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
 
 input[type="text"],
@@ -847,37 +879,59 @@ input[type="tel"],
 input[type="number"],
 input[type="datetime-local"],
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Учитывать границы в общей ширине элемента */
-    font-size: 14px;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	/* Учитывать границы в общей ширине элемента */
+	font-size: 14px;
 }
 
 textarea {
-    height: 100px; /* Устанавливаем высоту для textarea */
+	height: 100px;
+	/* Устанавливаем высоту для textarea */
 }
 
 input[type="submit"] {
-    padding: 10px 40px;
-    width: 100%;
-    height: 60px;
-    border-radius: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background: linear-gradient(330deg, #536EFF -2%, #20295B 151%);
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
+	padding: 10px 40px;
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background: linear-gradient(330deg, #536EFF -2%, #20295B 151%);
+	margin-top: 30px;
+	border: none;
+	cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background: linear-gradient(330deg, rgb(9, 30, 90) 30%, rgb(255, 255, 255) 200%);
+	background: linear-gradient(330deg, rgb(9, 30, 90) 30%, rgb(255, 255, 255) 200%);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Дорожка */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Стиль полосы прокрутки */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 15px;
+}
+
+/* На наведении */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 
@@ -973,7 +1027,8 @@ input[type="submit"]:hover {
 		margin-top: 15%;
 		margin-left: 2%;
 		margin-right: 2%;
-		display: flex;
+		display: none;
+		/*чтобы появилась менять на flex*/
 		flex-direction: column;
 		align-items: start;
 		width: 96%;
@@ -985,7 +1040,8 @@ input[type="submit"]:hover {
 	}
 
 	.info-block-div-pt2-rb {
-		display: flex;
+		display: none;
+		/*чтобы появилась менять на flex*/
 		flex-direction: column;
 		align-items: start;
 		width: 100%;
@@ -1474,7 +1530,7 @@ input[type="submit"]:hover {
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
 	}
-	
+
 	.popup-content {
 		background-color: white;
 		margin: 10% auto;

@@ -153,8 +153,7 @@
                         объектов
                         охраняются и входят в сеть особо охраняемых природных территорий.
                     </h2>
-                    <a><button class="info-button4" style="margin-left: 30px;" id="open-popup-btn" href="#"
-                            title="Открыть форму">Оставить заявку</button></a>
+                    <button class="info-button4" style="margin-left: 30px;" id="open-popup-btn" href="#" title="Открыть форму">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -281,16 +280,16 @@
         };
     </script>
     <script>
-        var openBtn = document.getElementById("open-popup-btn");
+        var openBtns = document.querySelectorAll("[id='open-popup-btn']");
         var closeBtn = document.getElementById("close-popup-btn");
         var popupForm = document.getElementById("popup-form");
 
-        // Показываем форму при клике на ссылку
-        openBtn.addEventListener("click", function () {
-            popupForm.style.display = "block";
+        openBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                popupForm.style.display = "block";
+            });
         });
 
-        // Скрываем форму при клике на кнопку закрытия
         closeBtn.addEventListener("click", function () {
             popupForm.style.display = "none";
         });
